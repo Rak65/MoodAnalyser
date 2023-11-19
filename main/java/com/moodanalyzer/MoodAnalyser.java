@@ -9,7 +9,7 @@ public class MoodAnalyser {
 
     // Method to analyze the mood and return "HAPPY" or "SAD"
     public String analyseMood() {
-        // Check if the message contains the word "Sad"
+        // Check the message contains the word "Sad"
         if (message.toLowerCase().contains("sad")) {
             return "SAD";
         } else {
