@@ -27,4 +27,9 @@ public class MoodAnalyserTest {
         MoodAnalyser moodAnalyser = new MoodAnalyser(""); // Constructor with empty message
         Assertions.assertEquals("HAPPY", moodAnalyser.analyseMood());
     }
+    @Test
+    public void testAnalyseMoodNull() {
+        MoodAnalyser moodAnalyserNull = new MoodAnalyser(null);
+        Assertions.assertEquals("HAPPY", moodAnalyserNull.analyseMood());
+    }
 }
