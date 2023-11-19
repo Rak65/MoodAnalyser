@@ -13,9 +13,13 @@ public class MoodAnalyser {
     // Method to analyze the mood and return "HAPPY" or "SAD"
     public String analyseMood() {
         // Check the message contains the word "Sad"
-        if (message.toLowerCase().contains("sad")) {
-            return "SAD";
-        } else {
+        try {
+            if (message.toLowerCase().contains("sad")) {
+                return "SAD";
+            } else {
+                return "HAPPY";
+            }
+        }catch (NullPointerException e){
             return "HAPPY";
         }
     }
